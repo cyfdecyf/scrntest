@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iPhone Screen Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- only works if added the page to home screen on iOS  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  </head>
+
+  <body>
+    <div id="content" class="container">
+      <h1>iPhone Screen Test</h1>
+
+      <p>Test whether your iPhone screen has bad pixels.</p>
+
+      <ol>
+        <li>Rotate to landscape mode</li>
+        <li>Enter full screen</li>
+        <li>Tap anywhere to display a sinlge color</li>
+        <li>Check with your eyes</li>
+        <li>Tap again to display the next color</li>
+      </ol>
+      <p class="invisible" id="done">All colors displayed, will start over again.</p>
+    </div> <!-- container -->
+
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery.mobile-1.3.0.js"></script>
+    <script src="lib/scrntest.js"></script>
+  </body>
+</html>
