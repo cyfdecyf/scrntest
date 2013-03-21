@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iPhone Screen Test</title>
+    <title>Screen Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- only works if added the page to home screen on iOS  -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <style type="text/css">
       .container {
         width: auto;
@@ -17,7 +18,6 @@
         margin: 20px 0;
       }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
   </head>
 
   <body>
@@ -25,22 +25,14 @@
       <div class="page-header">
         <h1>Screen Test</h1>
       </div>
-      <p class="lead">Test whether your iPhone screen has bad pixels.</p>
+      <p class="lead">Check for bad pixels on iOS device screen.</p>
 
-      <ol>
-        <li>Rotate to landscape mode</li>
-        <li>Enter full screen</li>
-        <li>Tap anywhere to display a sinlge color</li>
-        <li>Check with your eyes</li>
-        <li>Tap again to display the next color</li>
-      </ol>
-      <p class="invisible" id="done">All colors displayed, will start over again.</p>
+      <a href="iphone" class="btn btn-large btn-block">iPhone</a>
+      <br />
+      <a href="ipad" class="btn btn-large btn-block">iPad</a>
 
       <p class="muted credit">Created by <a href="http://chenyufei.info">Chen Yufei</a></p>
     </div> <!-- container -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.mobile.js"></script>
-    <script src="lib/scrntest.js"></script>
   </body>
 </html>

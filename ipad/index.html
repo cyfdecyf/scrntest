@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iPad Screen Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- only works if added the page to home screen on iOS  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="content" class="container">
+      <div class="page-header">
+        <h1>iPad Screen Test</h1>
+      </div>
+      <p class="lead">Test whether your iPad screen has bad pixels.</p>
+
+      <p>The first two steps are required to run this page in full screen mode on your iPad.</p>
+
+      <ol>
+        <li><strong>Add this page to home screen</strong></li>
+        <li><strong>Launch this page from home screen</strong></li>
+        <li>Tap anywhere to display a sinlge color</li>
+        <li>Check with your eyes</li>
+        <li>Tap again to display the next color</li>
+      </ol>
+      <p class="text-info invisible" id="done">
+        <strong>All colors displayed, will start over again.</strong>
+      </p>
+
+      <p class="muted credit">Created by <a href="http://chenyufei.info">Chen Yufei</a></p>
+    </div> <!-- container -->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.mobile.js"></script>
+    <script src="/lib/scrntest.js"></script>
+  </body>
+</html>
